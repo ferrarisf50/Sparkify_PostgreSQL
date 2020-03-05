@@ -23,9 +23,9 @@ This project is to create a Postgres database and ETL pipeline to optimize queri
 
 The first dataset, located in data/song_data, is a subset of real data from the [Million Song Dataset](http://millionsongdataset.com/). Each file is in JSON format and contains metadata about a song and the artist of that song. The files are partitioned by the first three letters of each song's track ID. For example, here are filepaths to two files in this dataset.
 
-`song_data/A/B/C/TRABCEI128F424C983.json
-song_data/A/A/B/TRAABJL12903CDCF1A.json
-`
+`song_data/A/B/C/TRABCEI128F424C983.json`</br>
+`song_data/A/A/B/TRAABJL12903CDCF1A.json`
+
 And below is an example of what a single song file, TRAABJL12903CDCF1A.json, looks like.
 
 ```json
@@ -38,8 +38,9 @@ The second dataset, located in data/log_data, consists of log files in JSON form
 
 The log files are partitioned by year and month. For example, here are filepaths to two files in this dataset.
 
-`log_data/2018/11/2018-11-12-events.json`
+`log_data/2018/11/2018-11-12-events.json`</br>
 `log_data/2018/11/2018-11-13-events.json`
+
 
 
 And below is an example of what the data in a log file, 2018-11-12-events.json, looks like.
@@ -72,6 +73,6 @@ And below is an example of what the data in a log file, 2018-11-12-events.json, 
 
 ## Getting Started <a name="Getting Started"></a>
 
-`python create_tables.py`
+`python create_tables.py`</br>
 `python etl.py`
 
