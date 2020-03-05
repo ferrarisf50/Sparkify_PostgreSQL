@@ -7,7 +7,8 @@
 3. [Source Data](#Datasets)
 4. [Database Schema](#Schema)
 5. [Scripts](#Scripts)
-6. [Getting Started](#Getting Started)
+6. [Getting Started](#Started)
+
 
 ## Introduction<a name="installation"></a>
 
@@ -50,25 +51,20 @@ And below is an example of what the data in a log file, 2018-11-12-events.json, 
 ## Database Schema <a name="Schema"></a>
 
 ### Fact Table
-1. **songplays** - records in log data associated with song plays i.e. records with page NextSong
-
+1. **songplays** - records in log data associated with song plays i.e. records with page NextSong</br>
 songplay_id, start_time, user_id, level, song_id, artist_id, session_id, location, user_agent
 
 ### Dimension Tables
-2. **users** - users in the app
-
+2. **users** - users in the app</br>
 user_id, first_name, last_name, gender, level
 
-3. **songs** - songs in music database
-
+3. **songs** - songs in music database</br>
 song_id, title, artist_id, year, duration
 
-4. **artists** - artists in music database
-
+4. **artists** - artists in music database</br>
 artist_id, name, location, latitude, longitude
 
-5. **time** - timestamps of records in songplays broken down into specific units
-
+5. **time** - timestamps of records in songplays broken down into specific units</br>
 start_time, hour, day, week, month, year, weekday
 
 ![schema](schema.png)
@@ -79,7 +75,7 @@ start_time, hour, day, week, month, year, weekday
 - **etl.py** - Reads and processes all song datasets and log datasets, then loads into the database.
 - **sql_queries.py** - Stores all SQL commands, that are used in database removal, creation, insertion, imported into create_tables.py and etl.py.
 
-## Getting Started <a name="Getting Started"></a>
+## Getting Started <a name="Started"></a>
 
 `python create_tables.py`</br>
 `python etl.py`
