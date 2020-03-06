@@ -90,7 +90,7 @@ time_table_insert = ("""insert into time (start_time, hour, day, week, month, ye
 
 # FIND SONGS
 
-song_select = (""" select a.song_id, a.artist_id from songs a join artists b \
+song_select = (""" select a.song_id, a.artist_id from songs a inner join artists b \
                 on a.artist_id=b.artist_id \
                 where a.title = %s and b.name=%s and a.duration=%s
 """)
